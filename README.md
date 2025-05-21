@@ -208,6 +208,24 @@ void assert_failed(uint8_t *file, uint32_t line)
 ![Screenshot 2025-05-17 102138](https://github.com/user-attachments/assets/63f9c57e-244c-4ec5-9a17-5167c66b0320)
 
 ## DUTY CYCLE AND FREQUENCY CALCULATION 
+
+![Screenshot 2025-05-17 101432](https://github.com/user-attachments/assets/43e5c85f-1d8b-4bee-bf1d-bfea114b9bba)
+```
+TON = 1 x 50 x 10^-6
+    = 0.00005
+TOFF= 0.1 x 50 x 10^-6
+    = 0.000005
+TOTAL TIME = TON + TOFF
+           = 0.00005 + 0.000005
+           = 0.000055
+FREQUENCY = 1/(TOTAL TIME)
+          = 18181.82
+DUTY CYCLE = TON /(TON+TOFF)
+           = 0.00005/0.000055
+           = 0.9
+      IN % =0.9*100 
+           = 90 %
+```
 ![PMC EX 7 (500)](https://github.com/user-attachments/assets/97e3fc67-68cd-4c75-9689-0b8a781f503a)
 
 ```
@@ -226,6 +244,7 @@ DUTY CYCLE = TON /(TON+TOFF)
       IN % =0.5*100 
            = 50 %
 ```
+
 ![PMC EXP 7](https://github.com/user-attachments/assets/6b811697-7c3e-4a1c-81e8-364a3c9bcd5c)
 
 ```
@@ -243,24 +262,6 @@ DUTY CYCLE = TON /(TON+TOFF)
            = 0.7
       IN % =0.7*100 
            = 70 %
-```
-![Screenshot 2025-05-17 101432](https://github.com/user-attachments/assets/43e5c85f-1d8b-4bee-bf1d-bfea114b9bba)
-
-```
-TON = 1 x 50 x 10^-6
-    = 0.00005
-TOFF= 0.1 x 50 x 10^-6
-    = 0.000005
-TOTAL TIME = TON + TOFF
-           = 0.00005 + 0.000005
-           = 0.000055
-FREQUENCY = 1/(TOTAL TIME)
-          = 18181.82
-DUTY CYCLE = TON /(TON+TOFF)
-           = 0.00005/0.000055
-           = 0.9
-      IN % =0.9*100 
-           = 90 %
 ```
 
 ## Result :
